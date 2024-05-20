@@ -1,0 +1,90 @@
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 240px;
+  }
+  
+  .team-member.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .team-member-img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  
+  .team-member-info {
+    bottom: 10px; /* Adjust this value to move the info text up */
+    left: 0;
+    right: 0;
+    text-align: center; /* Center the text horizontally */
+    opacity: 1; /* Initially hide the info */
+  }
+
+  .team-member-info .field {
+    opacity: 1;
+  }
+
+  .team-member-info .field:hover {
+    color: var(--gray);
+  }
+
+  .team-member:hover .team-member-info {
+    opacity: 1; /* Show the info on hover */
+  }
+
+  .team-member-info h2 {
+    margin: 0;
+    font-size: 23px;
+    color: var(--gray);
+  }
+
+  .team-member-info h2:hover {
+    margin: 0;
+    font-size: 26px;
+    color: var(--blue);
+  }
+
+  .team-member-info p {
+    margin: 5px 0;
+  }
+
+  .team-member-info p:hover {
+    margin: 5px 0;
+    color: var(--gray);
+  }
+
+  .team-member:hover .team-member-img {
+    transform: scale(1.1); /* Example of hover effect, increase image size */
+  }
+  
+  .field {
+    font-weight: bold;
+    color: var(--blue);
+  }
+  
+  .swiper-container {
+    cursor: grab !important; /* Change cursor to grabbing */
+  }
+  
+  .swiper-container:hover {
+    cursor: grabbing !important; /* Change cursor to grabbing when hovered */
+  }
+  
